@@ -1,0 +1,23 @@
+# Operating systems and editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Secrets and local configuration
+.env
+*.key
+*.pem
+secrets/
+
+# Raw or sensitive evidence
+*.evtx
+*.pcap
+*.pcapng
+evidence/raw/
+
+# Temporary files
+*.tmp
+*.log
+~$*
+
