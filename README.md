@@ -10,6 +10,25 @@ Phase 1 complete - lab baseline, Sysmon telemetry, and Wazuh ingestion are valid
 
 This repository documents an end-to-end SOC workflow in an isolated virtual lab. Each scenario connects controlled attack simulation to endpoint telemetry, Wazuh detection, analyst investigation, MITRE ATT&CK and Cyber Kill Chain mapping, and a formal incident report.
 
+## How to Navigate This Repository
+
+If you are reviewing the project for the first time, use this reading order:
+
+1. [`README.md`](README.md) for scope, status, and structure
+2. [`docs/lab-setup.md`](docs/lab-setup.md) for the validated environment baseline
+3. [`docs/lab-baseline-evidence.md`](docs/lab-baseline-evidence.md) for screenshot-backed proof of telemetry and ingestion
+4. [`docs/architecture.md`](docs/architecture.md) and [`docs/network-design.md`](docs/network-design.md) for system and traffic context
+5. [`docs/project-roadmap.md`](docs/project-roadmap.md) for the delivery sequence and upcoming case studies
+
+## Current Snapshot
+
+| Area | Status | Notes |
+|---|---|---|
+| Project foundation | Complete | Repository standards, templates, and documentation controls are in place |
+| Lab baseline | Complete | Agent health, network paths, Sysmon, and Wazuh ingestion are validated |
+| Published attack scenarios | Not started | Phase 2 begins with reconnaissance |
+| Evidence handling | Active | Screenshots are stored with naming standards and SHA-256 inventory |
+
 ## Objectives
 
 - Build a repeatable SOC investigation workflow.
