@@ -10,13 +10,29 @@ This evidence pack documents the validated Phase 1 baseline from platform health
 
 ![Wazuh agent active](assets/screenshots/lab-baseline/01-wazuh-agent-active.png)
 
+### E-002 Windows Network Configuration
+
+![Windows network configuration](assets/screenshots/lab-baseline/02-windows-network-configuration.png)
+
 ### E-003 Kali Connectivity Validation
 
 ![Kali network connectivity](assets/screenshots/lab-baseline/03-kali-network-connectivity.png)
 
+### E-004 Kali Version and Time
+
+![Kali version and time](assets/screenshots/lab-baseline/04-kali-version-time.png)
+
+### E-005 Wazuh Server Network
+
+![Wazuh server network](assets/screenshots/lab-baseline/05-wazuh-server-network.png)
+
 ### E-006 Wazuh Server Version and Time
 
 ![Wazuh server version and time](assets/screenshots/lab-baseline/06-wazuh-server-version-time.png)
+
+### E-007 Windows Version and Time
+
+![Windows version and time](assets/screenshots/lab-baseline/07-windows-version-time.png)
 
 ### E-008 Sysmon Service Health
 
