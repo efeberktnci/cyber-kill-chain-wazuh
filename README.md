@@ -4,7 +4,7 @@
 
 ## Project Status
 
-Phase 1 complete - lab baseline, Sysmon telemetry, and Wazuh ingestion are validated.
+Phase 1 complete - lab baseline, Sysmon telemetry, and Wazuh ingestion are validated. Phase 2 is now live with the first published reconnaissance case study.
 
 ## Project Overview
 
@@ -26,7 +26,7 @@ If you are reviewing the project for the first time, use this reading order:
 |---|---|---|
 | Project foundation | Complete | Repository standards, templates, and documentation controls are in place |
 | Lab baseline | Complete | Agent health, network paths, Sysmon, and Wazuh ingestion are validated |
-| Published attack scenarios | Not started | Phase 2 begins with reconnaissance |
+| Published attack scenarios | Active | Scenario 01 documents controlled Nmap reconnaissance with Wazuh-backed port-scan detection |
 | Evidence handling | Active | Screenshots are stored with naming standards and SHA-256 inventory |
 
 ## Objectives
@@ -66,7 +66,8 @@ Phase 1 established the minimum viable SOC telemetry chain for this repository:
 
 ## Implemented Scenarios
 
-No attack scenarios have been published yet. Phase 2 will begin with a reconnaissance case study focused on controlled Nmap-based discovery against the Windows victim.
+- [`Scenario 01 - Reconnaissance - Nmap Discovery`](scenarios/01-reconnaissance-nmap/README.md)  
+  Controlled TCP reconnaissance from Kali to the Windows victim, validated through Windows Firewall telemetry and correlated Wazuh detection (`rule.id:100101`).
 
 ## Repository Structure
 

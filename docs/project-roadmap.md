@@ -44,7 +44,9 @@
 
 Each case passes the same lifecycle: plan, simulate, collect, detect, investigate, map, report, improve, review, and commit.
 
-**Next planned scenario:** Reconnaissance with controlled Nmap-driven host and service discovery from Kali to the Windows victim.
+**Current state:** Scenario 01 is now implemented as a controlled Nmap-driven reconnaissance case study with Windows Firewall evidence and Wazuh port-scan correlation.
+
+**Next planned scenario:** Execution with controlled Windows command and PowerShell activity mapped to endpoint telemetry and Wazuh alerting.
 
 ## Phase 10 - Final SOC Report
 
