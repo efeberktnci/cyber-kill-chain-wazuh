@@ -4,6 +4,32 @@
 
 This evidence pack documents the validated Phase 1 baseline from platform health through endpoint telemetry generation and Wazuh ingestion.
 
+## Preview Gallery
+
+### E-001 Agent Enrollment
+
+![Wazuh agent active](assets/screenshots/lab-baseline/01-wazuh-agent-active.png)
+
+### E-003 Kali Connectivity Validation
+
+![Kali network connectivity](assets/screenshots/lab-baseline/03-kali-network-connectivity.png)
+
+### E-006 Wazuh Server Version and Time
+
+![Wazuh server version and time](assets/screenshots/lab-baseline/06-wazuh-server-version-time.png)
+
+### E-008 Sysmon Service Health
+
+![Sysmon service status](assets/screenshots/lab-baseline/08-sysmon-service-status.png)
+
+### E-009 Endpoint-side Sysmon Event
+
+![Sysmon Event ID 1 in Event Viewer](assets/screenshots/lab-baseline/09-sysmon-operational-event-id-1.png)
+
+### E-010 Wazuh Ingestion of Sysmon Event ID 1
+
+![Wazuh-ingested Sysmon Event ID 1](assets/screenshots/lab-baseline/10-wazuh-sysmon-event-id-1-ingested.png)
+
 ## Evidence Manifest
 
 | ID | File | Purpose | Sanitized |
