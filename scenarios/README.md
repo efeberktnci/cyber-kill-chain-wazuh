@@ -1,6 +1,29 @@
 # Scenario Case Studies
 
-Each numbered directory is a self-contained, reproducible case study. A scenario is not complete until its attack evidence, endpoint telemetry, Wazuh detection, investigation, mappings, incident report, and lessons learned have been reviewed.
+Each numbered directory is a self-contained case study that follows the same analyst workflow:
 
-Planned naming convention: `NN-tactic-short-name`, for example `01-reconnaissance-nmap`.
+1. Objective and lab scope
+2. Controlled attack simulation
+3. Endpoint and Wazuh evidence collection
+4. Detection review
+5. Investigation and mapping
+6. Incident reporting
+7. Lessons learned
 
+## Published / Active Scenarios
+
+| Scenario | Status | Summary |
+|---|---|---|
+| [`01-reconnaissance-nmap`](01-reconnaissance-nmap/README.md) | In progress | Controlled host and service discovery from Kali to the Windows victim |
+
+## Directory Contract
+
+Every scenario should contain:
+
+- `README.md` - primary case study narrative
+- `commands.md` - exact commands used during the simulation
+- `analysis.md` - analyst notes, timeline, and findings
+- `incident-report.md` - scenario-specific incident report
+- `evidence/screenshots/` - sanitized screenshots in ordered sequence
+
+This structure keeps attack execution, evidence, analysis, and reporting reviewable as separate artifacts.
