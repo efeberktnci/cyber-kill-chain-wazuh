@@ -42,5 +42,10 @@ Wazuh Manager -> Wazuh Indexer -> Wazuh Dashboard
 
 ## Validation Status
 
-Endpoint-side Sysmon generation is verified. Wazuh ingestion, decoding, indexing, dashboard searchability, and time alignment remain Phase 1 validation gates.
+Phase 1 validation is complete:
 
+- Endpoint-side Sysmon generation is verified
+- Wazuh agent enrollment is active
+- Sysmon `Event ID 1` is decoded, indexed, and searchable in Wazuh
+- Dashboard-side document inspection confirms parsed Sysmon fields
+- Lab time alignment has been normalized for scenario work

@@ -4,7 +4,7 @@
 
 ## Project Status
 
-Phase 0 — Project foundation and documentation standards.
+Phase 1 complete - lab baseline, Sysmon telemetry, and Wazuh ingestion are validated.
 
 ## Project Overview
 
@@ -25,18 +25,29 @@ This repository documents an end-to-end SOC workflow in an isolated virtual lab.
 | Endpoint | Windows 10 | Monitored victim and Sysmon telemetry source |
 | SIEM | Ubuntu / Wazuh | Collection, analysis, alerting, and investigation |
 
-Detailed infrastructure documentation will be maintained in [`docs/lab-setup.md`](docs/lab-setup.md).
+Detailed infrastructure documentation is maintained in [`docs/lab-setup.md`](docs/lab-setup.md). Baseline screenshots and integrity metadata are published in [`docs/lab-baseline-evidence.md`](docs/lab-baseline-evidence.md).
 
 ## Architecture
 
-Architecture and network diagrams are pending validated IP addressing and component versions.
+The core architecture and network model are now documented from the validated baseline.
 
-- [`docs/architecture.md`](docs/architecture.md) — logical components and telemetry flow
-- [`docs/network-design.md`](docs/network-design.md) — segmentation, addressing, and exposure rules
+- [`docs/architecture.md`](docs/architecture.md) - logical components and telemetry flow
+- [`docs/network-design.md`](docs/network-design.md) - segmentation, addressing, and exposure rules
+
+## Baseline Validation
+
+Phase 1 established the minimum viable SOC telemetry chain for this repository:
+
+- Windows 10 victim enrolled in Wazuh and reporting as an active agent
+- Sysmon64 installed, auto-started, and running
+- Endpoint-side Sysmon `Event ID 1` verified in Event Viewer
+- Sysmon `Event ID 1` ingested and searchable in Wazuh Threat Hunting
+- Kali-to-target and Kali-to-SIEM host-only connectivity validated
+- Lab time alignment normalized across Kali, Windows, and Ubuntu
 
 ## Implemented Scenarios
 
-No attack scenarios have been published. Reconnaissance will be the first case study after the lab baseline is validated.
+No attack scenarios have been published yet. Phase 2 will begin with a reconnaissance case study focused on controlled Nmap-based discovery against the Windows victim.
 
 ## Repository Structure
 
