@@ -2,7 +2,7 @@
 
 ## Status
 
-Planned.
+:hourglass_flowing_sand: Planned.
 
 ## Objective
 

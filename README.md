@@ -4,7 +4,7 @@
 
 ## Project Status
 
-Baseline preparation is complete - lab health, Sysmon telemetry, and Wazuh ingestion are validated. Phase 1 is now live as a reconnaissance detection track with the first implemented Windows Firewall + Wazuh case study and expansion slots for Suricata and EDR perspectives.
+Baseline preparation is complete - lab health, Sysmon telemetry, and Wazuh ingestion are validated. The published Phase 1 reconnaissance case study is complete, while advanced comparison variants are intentionally deferred until the core phase sequence is fully implemented.
 
 ## Project Overview
 
@@ -24,10 +24,10 @@ If you are reviewing the project for the first time, use this reading order:
 
 | Area | Status | Notes |
 |---|---|---|
-| Project foundation | ✅ Completed | Repository standards, templates, and documentation controls are in place |
-| Lab baseline | ✅ Completed | Agent health, network paths, Sysmon, and Wazuh ingestion are validated |
-| Published attack scenarios | ✅ In Progress | Phase 1 reconnaissance is now structured as a three-variant detection track; Variant 01 documents Windows Firewall + Wazuh port-scan detection |
-| Evidence handling | ✅ In Progress | Screenshots are stored with naming standards and SHA-256 inventory |
+| Project foundation | :white_check_mark: Completed | Repository standards, templates, and documentation controls are in place |
+| Lab baseline | :white_check_mark: Completed | Agent health, network paths, Sysmon, and Wazuh ingestion are validated |
+| Published attack scenarios | :white_check_mark: Completed | Phase 1 reconnaissance is published as a completed primary case study, with advanced comparison variants deferred for later expansion |
+| Evidence handling | :white_check_mark: Completed | Screenshots are stored with naming standards and SHA-256 inventory |
 
 ## Objectives
 
@@ -64,10 +64,34 @@ Phase 1 established the minimum viable SOC telemetry chain for this repository:
 - Kali-to-target and Kali-to-SIEM host-only connectivity validated
 - Lab time alignment normalized across Kali, Windows, and Ubuntu
 
-## Implemented Scenarios
+## Scenario Catalog
 
 - [`Phase 1 - Reconnaissance`](scenarios/01-reconnaissance/README.md)  
-  Multi-telemetry reconnaissance track that begins with a Windows Firewall + Wazuh port-scan detection case study and expands toward Suricata and EDR-backed visibility.
+  Completed primary case study using Windows Firewall + Wazuh port-scan detection. Suricata and EDR comparison variants are intentionally scheduled for post-core expansion.
+
+- [`Phase 2 - Execution`](scenarios/02-execution/README.md)  
+  Controlled command execution track planned across Sysmon, PowerShell, and EDR-oriented telemetry lenses.
+
+- [`Phase 3 - Credential Access`](scenarios/03-credential-access/README.md)  
+  Credential abuse track planned across authentication telemetry and host-level process visibility.
+
+- [`Phase 4 - Persistence`](scenarios/04-persistence/README.md)  
+  Persistence track planned around registry and scheduled task evidence paths.
+
+- [`Phase 5 - Privilege Escalation`](scenarios/05-privilege-escalation/README.md)  
+  Focused local privilege escalation case study planned as a single deep-dive variant.
+
+- [`Phase 6 - Defense Evasion`](scenarios/06-defense-evasion/README.md)  
+  Defense evasion track planned across obfuscated execution and endpoint protection tampering perspectives.
+
+- [`Phase 7 - Discovery and Lateral Movement`](scenarios/07-discovery-lateral-movement/README.md)  
+  Multi-variant host and remote movement track planned across endpoint and network visibility.
+
+- [`Phase 8 - Collection`](scenarios/08-collection/README.md)  
+  Collection track planned around local staging and archive preparation activity.
+
+- [`Phase 9 - Exfiltration`](scenarios/09-exfiltration/README.md)  
+  Multi-variant exfiltration track planned across egress, network IDS, and EDR/SIEM visibility.
 
 ## Repository Structure
 

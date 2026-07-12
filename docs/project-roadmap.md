@@ -30,7 +30,7 @@
 
 **Current state:** completed on the validated three-VM baseline documented in [`docs/lab-setup.md`](lab-setup.md) and [`docs/lab-baseline-evidence.md`](lab-baseline-evidence.md).
 
-## Phases 1-9 - Scenario Case Studies
+## Attack Phases 1-9 - Scenario Case Studies
 
 1. Reconnaissance
 2. Execution
@@ -44,9 +44,29 @@
 
 Each case passes the same lifecycle: plan, simulate, collect, detect, investigate, map, report, improve, review, and commit.
 
-**Current state:** Phase 1 is now structured as a reconnaissance detection track with three planned telemetry variants. Variant 01 is implemented as a controlled Nmap-driven case study using Windows Firewall evidence and Wazuh port-scan correlation; Variants 02 and 03 are reserved for Suricata + Wazuh and EDR + SIEM coverage.
+**Current state:** Phase 1 is published as a completed primary reconnaissance case study using Windows Firewall evidence and Wazuh port-scan correlation. Additional Suricata + Wazuh and EDR + SIEM variants are intentionally deferred until the primary scenario from each remaining attack phase has been completed.
 
 **Next planned scenario:** Execution with controlled Windows command and PowerShell activity mapped to endpoint telemetry and Wazuh alerting.
+
+## Variant Strategy by Phase
+
+| Phase | Variant Count | Why This Count Is Intentional |
+|---|---:|---|
+| 1. Reconnaissance | 3 | Host firewall, network IDS, and EDR/SIEM all provide meaningfully different visibility |
+| 2. Execution | 3 | Command execution can be compared across Sysmon, PowerShell logging, and EDR telemetry |
+| 3. Credential Access | 2 | Authentication evidence and host telemetry are the two strongest lenses without redundant repetition |
+| 4. Persistence | 2 | Registry and scheduled task persistence create distinct but sufficient evidence paths |
+| 5. Privilege Escalation | 1 | A single deep-dive case study is stronger than multiple shallow variants |
+| 6. Defense Evasion | 2 | Obfuscation and security-control tampering are the two most valuable perspectives |
+| 7. Discovery and Lateral Movement | 3 | Host discovery, remote access, and network movement deserve separate detection narratives |
+| 8. Collection | 2 | Local staging and archive preparation provide enough analytical contrast |
+| 9. Exfiltration | 3 | Egress behavior is best compared across host, network, and EDR/SIEM coverage |
+
+## Publication Strategy
+
+- First pass: complete one strong primary case study for every core attack phase
+- Second pass: return to selected phases and publish the deferred comparison variants
+- Completion status for a phase is tied to its published primary case study, not to every future comparison variant
 
 ## Phase 10 - Final SOC Report
 
