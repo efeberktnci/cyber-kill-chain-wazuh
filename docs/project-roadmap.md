@@ -30,7 +30,7 @@
 
 **Current state:** completed on the validated three-VM baseline documented in [`docs/lab-setup.md`](lab-setup.md) and [`docs/lab-baseline-evidence.md`](lab-baseline-evidence.md).
 
-## Phases 2-9 - Scenario Case Studies
+## Phases 1-9 - Scenario Case Studies
 
 1. Reconnaissance
 2. Execution
@@ -44,7 +44,7 @@
 
 Each case passes the same lifecycle: plan, simulate, collect, detect, investigate, map, report, improve, review, and commit.
 
-**Current state:** Scenario 01 is now implemented as a controlled Nmap-driven reconnaissance case study with Windows Firewall evidence and Wazuh port-scan correlation.
+**Current state:** Phase 1 is now structured as a reconnaissance detection track with three planned telemetry variants. Variant 01 is implemented as a controlled Nmap-driven case study using Windows Firewall evidence and Wazuh port-scan correlation; Variants 02 and 03 are reserved for Suricata + Wazuh and EDR + SIEM coverage.
 
 **Next planned scenario:** Execution with controlled Windows command and PowerShell activity mapped to endpoint telemetry and Wazuh alerting.
 

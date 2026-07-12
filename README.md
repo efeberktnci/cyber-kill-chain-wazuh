@@ -4,7 +4,7 @@
 
 ## Project Status
 
-Phase 1 complete - lab baseline, Sysmon telemetry, and Wazuh ingestion are validated. Phase 2 is now live with the first published reconnaissance case study.
+Baseline preparation is complete - lab health, Sysmon telemetry, and Wazuh ingestion are validated. Phase 1 is now live as a reconnaissance detection track with the first implemented Windows Firewall + Wazuh case study and expansion slots for Suricata and EDR perspectives.
 
 ## Project Overview
 
@@ -24,10 +24,10 @@ If you are reviewing the project for the first time, use this reading order:
 
 | Area | Status | Notes |
 |---|---|---|
-| Project foundation | Complete | Repository standards, templates, and documentation controls are in place |
-| Lab baseline | Complete | Agent health, network paths, Sysmon, and Wazuh ingestion are validated |
-| Published attack scenarios | Active | Scenario 01 documents controlled Nmap reconnaissance with Wazuh-backed port-scan detection |
-| Evidence handling | Active | Screenshots are stored with naming standards and SHA-256 inventory |
+| Project foundation | ✅ Completed | Repository standards, templates, and documentation controls are in place |
+| Lab baseline | ✅ Completed | Agent health, network paths, Sysmon, and Wazuh ingestion are validated |
+| Published attack scenarios | ✅ In Progress | Phase 1 reconnaissance is now structured as a three-variant detection track; Variant 01 documents Windows Firewall + Wazuh port-scan detection |
+| Evidence handling | ✅ In Progress | Screenshots are stored with naming standards and SHA-256 inventory |
 
 ## Objectives
 
@@ -66,8 +66,8 @@ Phase 1 established the minimum viable SOC telemetry chain for this repository:
 
 ## Implemented Scenarios
 
-- [`Scenario 01 - Reconnaissance - Nmap Discovery`](scenarios/01-reconnaissance-nmap/README.md)  
-  Controlled TCP reconnaissance from Kali to the Windows victim, validated through Windows Firewall telemetry and correlated Wazuh detection (`rule.id:100101`).
+- [`Phase 1 - Reconnaissance`](scenarios/01-reconnaissance/README.md)  
+  Multi-telemetry reconnaissance track that begins with a Windows Firewall + Wazuh port-scan detection case study and expands toward Suricata and EDR-backed visibility.
 
 ## Repository Structure
 

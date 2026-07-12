@@ -1,4 +1,4 @@
-# Scenario 01 - Reconnaissance - Nmap Discovery
+# Reconnaissance Variant 01 - Windows Firewall + Wazuh
 
 ## Executive Summary
 

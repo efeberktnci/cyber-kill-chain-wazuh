@@ -1,4 +1,4 @@
-# Scenario 01 Commands
+# Reconnaissance Variant 01 Commands
 
 This file records the final commands used to execute, validate, and investigate the published reconnaissance case study.
 

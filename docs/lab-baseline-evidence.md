@@ -87,4 +87,4 @@ This evidence pack documents the validated Phase 1 baseline from platform health
 - Windows and Wazuh screenshots intentionally preserve lab hostnames, internal host-only addresses, and event metadata because they are necessary to establish provenance.
 - Sensitive values unrelated to the lab objective were redacted before publication where needed.
 - This evidence pack is organized by source VM to make review and validation easier.
-- This evidence pack is the prerequisite for the first published scenario in Phase 2.
+- This evidence pack is the prerequisite for the first published scenario in Phase 1.

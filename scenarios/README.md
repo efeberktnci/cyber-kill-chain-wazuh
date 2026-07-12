@@ -14,7 +14,7 @@ Each numbered directory is a self-contained case study that follows the same ana
 
 | Scenario | Status | Summary |
 |---|---|---|
-| [`01-reconnaissance-nmap`](01-reconnaissance-nmap/README.md) | In progress | Controlled host and service discovery from Kali to the Windows victim |
+| [`01-reconnaissance`](01-reconnaissance/README.md) | ✅ In Progress | Multi-variant reconnaissance detection phase with Windows Firewall + Wazuh completed first |
 
 ## Directory Contract
 
