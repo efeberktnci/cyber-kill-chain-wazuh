@@ -1,6 +1,6 @@
-# End-to-End Cyber Kill Chain Simulation & Detection using Wazuh SIEM
+# End-to-End Cyber Kill Chain Simulation & Detection & Investigation Lab
 
-> Professional SOC lab simulating adversary activity, detection engineering, investigation, and incident response with Wazuh SIEM.
+> Professional SOC lab covering adversary simulation, endpoint telemetry, detection engineering, investigation, and incident response across Wazuh and future security tooling.
 
 ## Project Status
 
