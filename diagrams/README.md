@@ -27,3 +27,8 @@ Store editable sources and exported PNG/SVG files together. Every exported diagr
 
 This directory now mirrors the attack-phase structure so visuals do not become one mixed pile later.
 
+## Current State
+
+- Phase 1 now includes documentation-ready diagram files
+- later phases keep lightweight placeholders until their primary case studies are published
+

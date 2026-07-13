@@ -20,3 +20,8 @@ Cross-scenario reporting belongs here. Scenario-specific incident reports remain
 
 Reporting will also grow by phase. Mirroring the phase structure now keeps future write-ups consistent and avoids one giant mixed reporting folder later.
 
+## Current State
+
+- Phase 1 now includes a phase-level summary report above the scenario-local incident report
+- later phases remain intentionally light until their primary scenarios are published
+

@@ -117,6 +117,8 @@ templates/     Controlled documentation and evidence templates
 - `diagrams/` now mirrors the same per-phase structure and will receive visuals when each phase has enough validated content
 - `reports/` now mirrors the same per-phase structure and will hold higher-level reporting once each phase has enough material for summary analysis
 
+Phase 1 now includes its first completed detection coverage file, phase-level summary report, and diagram-ready telemetry documentation. The remaining phases will follow the same standard as they are completed.
+
 ## Roadmap
 
 See [`docs/project-roadmap.md`](docs/project-roadmap.md).
