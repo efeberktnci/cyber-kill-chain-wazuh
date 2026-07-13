@@ -75,6 +75,8 @@ Each case passes the same lifecycle: plan, simulate, collect, detect, investigat
 - Cross-scenario findings and risk themes
 - Executive and technical conclusions
 
+**Current state:** the working detection coverage matrix has been started in [`../detections/detection-coverage-matrix.md`](../detections/detection-coverage-matrix.md) and will expand as each primary attack phase is completed.
+
 ## Phase 11 - Lessons Learned
 
 - Visibility gaps
