@@ -64,6 +64,13 @@ Phase 1 established the minimum viable SOC telemetry chain for this repository:
 - Kali-to-target and Kali-to-SIEM host-only connectivity validated
 - Lab time alignment normalized across Kali, Windows, and Ubuntu
 
+## Detection Coverage
+
+Detection engineering is tracked separately from the scenario narratives so reviewers can understand not only what attack was executed, but also what telemetry and logic produced the defender outcome.
+
+- [`detections/README.md`](detections/README.md) - phase-by-phase detection coverage index
+- [`detections/phase-01-reconnaissance/README.md`](detections/phase-01-reconnaissance/README.md) - completed detailed coverage summary for the reconnaissance phase
+
 ## Scenario Catalog
 
 - [`Phase 1 - Reconnaissance`](scenarios/01-reconnaissance/README.md)  
@@ -103,6 +110,12 @@ detections/    Wazuh, Sysmon, and future detection content
 reports/       Cross-scenario and final SOC reports
 templates/     Controlled documentation and evidence templates
 ```
+
+## Planned Fill Strategy for Supporting Directories
+
+- `detections/` now uses per-phase folders so detection coverage can scale cleanly from Phase 1 through Phase 9
+- `diagrams/` now mirrors the same per-phase structure and will receive visuals when each phase has enough validated content
+- `reports/` now mirrors the same per-phase structure and will hold higher-level reporting once each phase has enough material for summary analysis
 
 ## Roadmap
 

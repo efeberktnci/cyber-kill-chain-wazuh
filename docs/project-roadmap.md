@@ -75,6 +75,8 @@ Each case passes the same lifecycle: plan, simulate, collect, detect, investigat
 - Cross-scenario findings and risk themes
 - Executive and technical conclusions
 
+**Current state:** detection coverage is now being organized as phase-by-phase summary files under `detections/` instead of one oversized matrix, so GitHub preview stays readable as the project grows.
+
 ## Phase 11 - Lessons Learned
 
 - Visibility gaps
